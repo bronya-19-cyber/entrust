@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mypostform":"/container/order container/order container"
+  },
+  "navigationBarTitleText": "订单"
+}

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-item {
+  margin-bottom: 15px;
+}
+
+.form-item text {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.captcha-input {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-input input {
+  width: 90%; /* 调整按钮宽度 */
+  margin-right: 10px; /* 调整输入框和按钮之间的间距 */
+}
+
+.captcha-button {
+  width: 10%; /* 调整按钮宽度 */
+  padding: 10px; /* 调整按钮内边距 */
+  background-color: #0748c1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px; /* 调整字体大小 */
+}
+
+.captcha-button[disabled] {
+  background-color: #ccc;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #053d90;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}

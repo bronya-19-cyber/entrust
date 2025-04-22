@@ -1,0 +1,23 @@
+<view>
+  <postdetails
+    time="{{orderInfo.time}}"
+    publisher="{{orderInfo.publisher}}"
+    amount="{{orderInfo.amount}}"
+    status="{{orderInfo.status}}"
+    description="{{orderInfo.description}}"
+    details="{{orderInfo.details}}"
+  />
+  <view class="input-area3">
+    <text>联系方式:{{orderInfo.way}}</text>
+  </view>
+  <view>
+    <view class="input-area3">
+      <text>接单人:{{orderInfo.receiver}}</text>
+    </view>
+    <view class="input-area3">
+      <text>接单人联系方式:{{orderInfo.receiverWay}}</text>
+    </view>
+  </view>
+  
+</view>
+

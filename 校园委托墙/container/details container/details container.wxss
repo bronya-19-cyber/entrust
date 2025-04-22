@@ -1,0 +1,68 @@
+/* 容器样式 */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+/* 头部样式（昵称和时间选择框） */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nickname {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.time-picker {
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* 输入区域样式 */
+.input-area1 {
+  margin-bottom: 20px;
+  width: 90%;
+  max-height: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.input-area2 {
+  margin-bottom: 20px;
+  width: 90%;
+  max-height: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.input-area3 {
+  width: 90%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* 确认发布按钮样式 */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.confirm-button {
+  background-color: #5890b6;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}

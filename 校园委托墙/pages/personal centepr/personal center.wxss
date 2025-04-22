@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* 登录按钮区域 */
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px; /* 与底部按钮的间距 */
+}
+
+.avatar-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+}
+
+.avatar-button image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.user-info text {
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 底部按钮区域 */
+.button-group {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+
+.bottom-button {
+  width: 45%;
+  background-color: #5a7fb1;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.bottom-button:hover {
+  background-color: #5a7fb1;
+}

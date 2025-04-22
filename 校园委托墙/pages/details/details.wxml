@@ -1,0 +1,15 @@
+<view>
+  <postdetails
+    time="{{orderInfo.time}}"
+    publisher="{{orderInfo.publisher}}"
+    amount="{{orderInfo.amount}}"
+    status="{{orderInfo.status}}"
+    description="{{orderInfo.description}}"
+    details="{{orderInfo.details}}"
+  />
+  <!-- 接取按钮 -->
+  <view class="footer">
+    <button class="confirm-button" bindtap="handleAccept">接取</button>
+  </view>
+</view>
+  

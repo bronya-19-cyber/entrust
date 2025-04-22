@@ -1,0 +1,56 @@
+/* 选项卡样式 */
+.tabs {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f5f5f5;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  color: rgb(73, 71, 71);
+}
+
+.tab.active {
+  color: #0751c1;
+  border-bottom: 2px solid #0748c1;
+}
+
+/* 卡片样式 */
+.card {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.card input,
+.card textarea,
+.card picker {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+/* 按钮组样式 */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.button-group button {
+  flex: 1;
+  margin: 0 5px;
+  font-size: 14px;
+}

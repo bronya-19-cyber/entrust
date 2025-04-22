@@ -1,0 +1,59 @@
+<view>
+  <view class="tabs">
+    <view class="tab {{currentTab === 0 ? 'active' : ''}}" bindtap="switchTab" data-tab="0">
+      我接到的订单
+    </view>
+    <view class="tab {{currentTab === 1 ? 'active' : ''}}" bindtap="switchTab" data-tab="1">
+      我发布的帖子
+    </view>
+  </view>
+  <!-- 滑动容器 -->
+  <swiper style="height:1000px;" current="{{currentTab}}" bindchange="swiperChange">
+  <!-- 我发布的帖子 -->
+    <swiper-item>
+      <block wx:for="{{orders}}" wx:key="post_id">
+        <mypostform
+          post_id="{{item.post_id}}"
+          time="{{item.time}}"
+          publisher="{{item.publisher}}"
+          amount="{{item.amount}}"
+          status="{{item.status}}"
+          description="{{item.description}}"
+          publishTime="{{item.publishTime}}"
+          url="/pages/order details/order details"
+        />
+        <view class="button-group">
+          <button data-post_id="{{item.post_id}}" bindtap="handleComplete">
+            <text>确认订单</text>
+          </button>
+          <button data-post_id="{{item.post_id}}" bindtap="handleCancel">
+            <text>取消接单</text>
+          </button>
+        </view>
+      </block>
+    </swiper-item>
+  <!-- 我接的订单 -->
+    <swiper-item>
+      <block wx:for="{{posts}}" wx:key="post_id">
+        <mypostform
+          post_id="{{item.post_id}}"
+          time="{{item.time}}"
+          publisher="{{item.publisher}}"
+          amount="{{item.amount}}"
+          status="{{item.status}}"
+          description="{{item.description}}"
+          publishTime="{{item.publishTime}}"
+          url="/pages/order details/order details"
+          />
+        <view class="button-group">
+          <button data-post_id="{{item.post_id}}" bindtap="handleComplete">
+            <text>确认订单</text>
+          </button>
+          <button data-post_id="{{item.post_id}}" bindtap="handleDel">
+            <text>删除帖子</text>
+          </button>
+        </view>
+      </block>     
+    </swiper-item>
+  </swiper>
+</view>

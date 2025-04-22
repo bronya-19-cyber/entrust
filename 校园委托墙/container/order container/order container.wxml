@@ -1,0 +1,17 @@
+<view class="order-container" bind:touchend="goto"><!--帖子简视图-->
+  <!-- 上部：时间、发布人、金额、状态 -->
+  <view class="header">
+    <text class="time">{{ time }}</text>
+    <text class="publisher">{{ publisher }}</text>
+    <text class="amount">{{ amount }}</text>
+    <text class="status">{{ status }}</text>
+  </view>
+  <!-- 中部：委托简介 -->
+  <view class="description">
+    <text>{{ description }}</text>
+  </view>
+  <!-- 下部：发布时间 -->
+  <view class="footer">
+    <text class="publish-time">{{ publishTime }}</text>
+  </view>
+</view>

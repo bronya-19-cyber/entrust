@@ -1,0 +1,38 @@
+<view>
+  <!-- 固定按钮 -->
+  <view class="fixed-button" bindtap="onButtonClick">
+    <image src="/utils/images/壁纸2.jpg" mode="aspectFit" />
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper 
+    autoplay 
+    circular
+    indicator-dots
+    indicator-color="#ffffff"
+    interval="3000"
+  >
+    <swiper-item>
+      <image src="/utils/images/壁纸2.jpg" mode="aspectFit"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/utils/images/壁纸2.jpg" mode="aspectFit"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="/utils/images/壁纸2.jpg" mode="aspectFit"/>
+    </swiper-item>
+  </swiper>
+</view>
+
+<block wx:for="{{items}}" wx:key="post_id">
+    <postform
+      post_id="{{item.post_id}}"
+      time="{{item.time}}"
+      publisher="{{item.publisher}}"
+      amount="{{item.amount}}"
+      status="{{item.status}}"
+      description="{{item.description}}"
+      publishTime="{{item.publishTime}}"
+      url="/pages/details/details"
+    />
+</block>

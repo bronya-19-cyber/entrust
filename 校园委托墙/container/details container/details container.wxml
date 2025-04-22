@@ -1,0 +1,25 @@
+<view class="container">
+
+  <!-- 发布人昵称和时间 -->
+  <view class="header">
+    <text class="nickname">发布人：{{publisher}}</text>
+    <view class="time-picker">截至时间：{{time}}</view>
+  </view>
+
+  <!-- 简介展示区域 -->
+  <view class="input-area2">
+    <text>简介：{{description}}</text>
+  </view>
+  <!-- 金额展示区域 -->
+  <view class="input-area1">
+    <text>金额：{{amount}}</text>
+  </view>
+  <!-- 状态展示区域 -->
+  <view class="input-area1">
+    <text>状态：{{status}}</text>
+  </view>
+  <!-- 详情展示区域 -->
+  <view class="input-area3">
+    <text>详情：{{details}}</text>
+  </view>
+</view>

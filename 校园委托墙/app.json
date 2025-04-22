@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal centepr/personal center",
+    "pages/post a topic/post a topic",
+    "pages/login/login",
+    "pages/order details/order details",
+    "pages/details/details",
+    "pages/register/register",
+    "pages/order/order",
+    "pages/messages/messages"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0000ff"
+  },
+  "style": "v2",
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/personal centepr/personal center",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

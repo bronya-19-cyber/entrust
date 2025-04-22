@@ -1,0 +1,92 @@
+/* 页面容器 */
+.page-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 用户和时间选择器 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user {
+  font-size: 16px;
+  color: #333;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time label {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.picker {
+  font-size: 16px;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 输入框 */
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+/* 金额输入框 */
+.amount .input {
+  height: 80px;
+}
+
+/* 简介输入框 */
+.description .input {
+  height: 120px;
+}
+
+/* 详情和联系方式输入框 */
+.detail .input,
+.way .input {
+  height: 150px;
+}
+
+/* 提交按钮 */
+.submit {
+  margin-top: 24px;
+}
+
+.submit button {
+  width: 100%;
+  background-color: #173596;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 0;
+  border: none;
+}
+
+.submit button:active {
+  background-color: #2d3bb9;
+}

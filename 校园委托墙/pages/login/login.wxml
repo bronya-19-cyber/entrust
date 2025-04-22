@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="form">
+    <view class="form-item">
+      <text>邮箱</text>
+      <input type="text" placeholder="请输入邮箱" bindinput="onUseremailInput" />
+    </view>
+    <view class="form-item">
+      <text>密码</text>
+      <input type="password" placeholder="请输入密码" bindinput="onPasswordInput" />
+    </view>
+    <button bindtap="onLogin">登录</button>
+    <button bindtap="goToRegister">注册</button>
+  </view>
+</view>

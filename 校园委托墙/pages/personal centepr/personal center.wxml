@@ -1,0 +1,22 @@
+<view class="container">
+  <!-- 登录按钮 -->
+  <view class="login-section">
+    <view class="user-info" wx:if="{{userInfo.nickName}}">
+      <image src="{{userInfo.avatarUrl}}" mode="aspectFill" />
+      <text>昵称:{{userInfo.nickName}}</text>
+      <text>ID: {{userInfo.userId}}</text>
+      <button bindtap="onLogout">退出登录</button>
+    </view>
+    <view  class="user-info" wx:else>
+      <button class="avatar-button" bindtap="goToLogin">
+        <image src="{{'/utils/images/壁纸2.jpg'}}" mode="aspectFill" />
+      </button>
+      <text>登录</text>
+    </view>
+  </view>
+
+  <!-- 订单和问卷按钮 -->
+  <view class="button-group">
+    <button class="bottom-button" bindtap="goToQuestionnaire">问卷调查 </button>
+  </view>
+</view>
